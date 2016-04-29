@@ -29,8 +29,19 @@ THE SOFTWARE.
 
 - (void)pluginInitialize
 {
-	self.webView.dataDetectorTypes = UIDataDetectorTypeNone;
-	NSLog(@"Disabled data detectors.");
+	NSArray *views = self.webView.subviews;
+	if (views.count == 0) {
+		NSLog(@"No webview subviews found, not applying the longpress fix");
+		return;
+	}
+	for (int i=0; i<views.count; i++) {
+		UIView *webViewScrollView = views[i];
+		if ([webViewScrollView isKindOfClass:[UIWebView class]]) {
+			webViewScrollView.dataDetectorTypes = UIDataDetectorTypeNone;
+			NSLog(@"Disabled data detectors.");
+			break;
+		}
+	}
 }
 
 @end
