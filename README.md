@@ -8,6 +8,9 @@ It works by setting `webView.dataDetectorTypes` to `UIDataDetectorTypeNone`.
 
 ## Version History
 
+### 1.0.1
+* Minor code fix.
+
 ### 1.0.0
 * Fixed code for cordova 6.
 * Set minimum cordova version to 6.0.0.

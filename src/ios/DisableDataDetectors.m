@@ -37,7 +37,7 @@ THE SOFTWARE.
 	for (int i=0; i<views.count; i++) {
 		UIView *webViewScrollView = views[i];
 		if ([webViewScrollView isKindOfClass:[UIWebView class]]) {
-			webViewScrollView.dataDetectorTypes = UIDataDetectorTypeNone;
+			((UIWebView *)webViewScrollView).dataDetectorTypes = UIDataDetectorTypeNone;
 			NSLog(@"Disabled data detectors.");
 			break;
 		}
