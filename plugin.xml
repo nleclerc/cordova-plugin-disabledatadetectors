@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 			id="cordova-plugin-disabledatadetectors"
-			version="1.0.2">
+			version="1.1.0">
 
 	<name>Disable Data Detectors</name>
 	<description>Disables iOS data detectors that parse page content to insert special links (ex: phone numbers).</description>
