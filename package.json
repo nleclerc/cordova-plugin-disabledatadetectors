@@ -1,0 +1,10 @@
+{
+  "name": "cordova-plugin-disabledatadetectors",
+  "version": "1.0.1",
+  "description": "Disables iOS data detectors that parse page content to insert special links (ex: phone numbers).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nleclerc/cordova-plugin-disabledatadetectors.git"
+  },
+  "homepage": "https://github.com/nleclerc/cordova-plugin-disabledatadetectors#readme"
+}
